@@ -1346,6 +1346,7 @@ Item {
                 pluginId: String(dashboardCard.modelData)
                 bar: hostBar
                 pluginRegistry: root.pluginRegistry
+                omarchyPath: root.omarchyPath
               }
             }
           }
