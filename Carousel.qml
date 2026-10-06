@@ -22,7 +22,7 @@ Item {
 
   property var shell: null
   property var pluginRegistry: null
-  readonly property string pluginId: "io.github.iryzhkov.omadeck"
+  readonly property string pluginId: "io.github.camilo211g.omadeck-super-tab"
   // Handed in by the shell on load, like `shell` and `pluginRegistry`. There is
   // no fallback: until the shell has said where Omarchy lives, no helper runs.
   property string omarchyPath: ""
@@ -91,7 +91,7 @@ Item {
   // Layout knobs. Each one is read from this plugin's entry in shell.json and
   // clamped, so a hand-edited value cannot size a panel to nothing or to
   // something the compositor refuses:
-  //   { "id": "io.github.iryzhkov.omadeck", "sliceWidth": 720, "dwellMs": 4000 }
+  //   { "id": "io.github.camilo211g.omadeck-super-tab", "sliceWidth": 720, "dwellMs": 4000 }
 
   // Every panel is the same size at every position. Nothing grows or shrinks as
   // the selection moves; panels slide and change places in the stack.
@@ -157,7 +157,7 @@ Item {
 
   // Dashboard cards above the stack, in the order given. Configured on this
   // plugin's entry in ~/.config/omarchy/shell.json:
-  //   { "id": "io.github.iryzhkov.omadeck",
+  //   { "id": "io.github.camilo211g.omadeck-super-tab",
   //     "dashboard": ["omarchy.clock", "media", "omarchy.weather"] }
   // An empty array turns the row off.
   readonly property int tileHeight: finiteNum(pluginSetting("tileHeight", 112), 60, 600, 112)
